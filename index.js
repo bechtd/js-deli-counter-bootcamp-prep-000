@@ -9,5 +9,5 @@ function nowServing(line) {
     return "There is nobody waiting to be served!";
   }
   //var name = line.shift(1);
-  return `Currently serving ${line.shift(1)}`
+  return `Currently serving ${line.shift(1)}.`
 }
