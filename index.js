@@ -13,9 +13,21 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
+  var intro = "The line is currently";
+  
   if(line.length === 0) {
-    return "The line is currently empty.";
+    return intro + " empty.";
   }
   
-  return line;
+  var output = ""
+  for(var i = 0; i < line.length; i++) {
+    if(output.length > 0)
+    {
+      output += ","
+    }
+    
+    output += ` ${i+1}. ${line[i]}`
+  }
+  
+  return intro + ":" + output;
 }
