@@ -16,7 +16,7 @@ function currentLine(line) {
   var intro = "The line is currently";
   
   if(line.length === 0) {
-    return intro + " empty.";
+    return `${intro} empty.`;
   }
   
   var output = ""
@@ -29,5 +29,5 @@ function currentLine(line) {
     output += ` ${i+1}. ${line[i]}`
   }
   
-  return intro + ":" + output;
+  return `${intro} : ${output}`;
 }
