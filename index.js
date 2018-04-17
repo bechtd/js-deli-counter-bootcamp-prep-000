@@ -4,4 +4,9 @@ function takeANumber(line, person) {
   return `Welcome, ${person}. You are number ${nextNumber} in line.`;
 }
 
-function 
+function nowServing(line) {
+  if(line.length === 0) {
+    return ""
+  }
+  return
+}
