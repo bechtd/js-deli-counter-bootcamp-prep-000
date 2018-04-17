@@ -29,5 +29,5 @@ function currentLine(line) {
     output += ` ${i+1}. ${line[i]}`
   }
   
-  return `${intro} : ${output}`;
+  return `${intro}: ${output}`;
 }
